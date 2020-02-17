@@ -1,14 +1,16 @@
 #rozpracováno
 
 my_new_dict = {'m': 12345, 'n': 32145, 'o': 54321, 'p': 23232, 'q': 43210, 'r': 13579}
+print("My new dict", my_new_dict)
 
 maximal_value_of_key = max(my_new_dict.keys())
-print("max value of key:" + maximal_value_of_key)
+print("Max value of key:" + maximal_value_of_key)
 
 maximal_value = max(my_new_dict.values())
-print("max value:", maximal_value)
+print("Max value:", maximal_value)
 
-if maximal_value > maximal_value_of_key:
-    print("hurrá")
+if str(maximal_value) < maximal_value_of_key:
+    my_new_dict.pop(maximal_value_of_key)
+else: print("hurá")
 
 print(my_new_dict)
