@@ -15,20 +15,3 @@ print("Indexing:", first_five,",", last_five,",", each_third)
 print("First five letters:" + first_five)
 print("Last five letters:" + last_five)
 print("Each third letter:" + each_third)
-
-#Name, surname, full_name
-#řeším
-name = (input("Please insert your first name:"))
-print("Name:" + name)
-surname = (input("Please insert your surname:"))
-print("Surname:" + surname)
-full_name = name + surname
-print("Full name:" + full_name)
-
-
-name_length = len(name+surname)
-print("Length of full name:" + name_length)
-
-print("="*len(full_name))
-print(full_name)
-print("="*len(full_name))
