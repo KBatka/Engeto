@@ -32,3 +32,32 @@ other freshwater genera and herring similar to those
 in modern oceans. Other fish such as paddlefish, 
 garpike and stingray are also present.'''
 ]
+
+print("_ _"*50)
+print('Welcome to the app. Please login in')
+username = input('USERNAME:')
+password = input('PASSWORD:')
+
+slovník = {'bob':123, 'ann': 'pass123', 'mike': 'password123', 'liz': 'pass123'}
+#kod pro ověření hesla
+print("_ _"*50)
+
+print('We have three texts to be analysed.')
+handler = input('Enter a number btw. 1 - 3 to select:')
+#kod pro a) výběr objektu v listu, b) vyhodnocení 5 požadavků
+
+print('There are',nr_of_words,'words in the selected text.')
+print('There are',nrcapitalltr,'titlecased words')
+print('There are',nrupwrds,'uppercase words')
+print('There are',nrlcwrds,'lowercase words')
+print('There are',nrnumonly,'numeric strings')
+
+print("_ _"*50)
+#tabulka ->pracuji s handlerem
+#počítá délku slov a jejich četnost v jednotlivých objektech
+#tolik řádků jako je zastoupení jednotlivých slov, tzn. třeba pětiznakové můžou chybět
+# (napsat tak, aby se samo korigovalo nebo pro každý blok zvlášť? wtf how?)
+print("_ _"*50)
+
+print('If we summed all the numbers in this text we would get:'#sum hodnoty všech numer objektů)
+print("_ _"*50)
