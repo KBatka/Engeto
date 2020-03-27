@@ -12,3 +12,5 @@ my_str = 'Python'
 result = print('Titlecased') if my_str.istitle() else print('Not titlecased')
 
 #ptá se mne, zda je první písmeno velké, nebo všechna?
+
+#rozpracováno
