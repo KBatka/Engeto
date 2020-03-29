@@ -34,7 +34,7 @@ garpike and stingray are also present.'''
 ]
 
 i = ''
-
+.
 print("_ _"*50)
 print('Welcome to the app. Please login in')
 
