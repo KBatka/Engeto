@@ -33,13 +33,27 @@ in modern oceans. Other fish such as paddlefish,
 garpike and stingray are also present.'''
 ]
 
+i = ''
+
 print("_ _"*50)
 print('Welcome to the app. Please login in')
+
+names = ['bob','ann','mike','liz']
+login = ['123','pass123','password123','pass123']
+
 username = input('USERNAME:')
 password = input('PASSWORD:')
 
-slovník = {'bob':123, 'ann': 'pass123', 'mike': 'password123', 'liz': 'pass123'}
-#kod pro ověření hesla
+while True:
+    if username == names[0]:
+        password is login[-3]
+    if password not in login[-3]:
+        print('wrong password')
+    elif password == '':
+        print('please write something')
+    break
+else:
+    pass
 print("_ _"*50)
 
 print('We have three texts to be analysed.')
@@ -60,4 +74,3 @@ print("_ _"*50)
 print("_ _"*50)
 
 print('If we summed all the numbers in this text we would get:'#sum hodnoty všech numer objektů)
-print("_ _"*50)
