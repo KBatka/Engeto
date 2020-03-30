@@ -34,7 +34,7 @@ garpike and stingray are also present.'''
 ]
 
 i = ''
-.
+
 print("_ _"*50)
 print('Welcome to the app. Please login in')
 
@@ -47,13 +47,25 @@ password = input('PASSWORD:')
 while True:
     if username == names[0]:
         password is login[-3]
-    if password not in login[-3]:
-        print('wrong password')
-    elif password == '':
-        print('please write something')
+        if password not in login[-3]:
+            print('wrong password')
+    if username == names[1]:
+        password is login[1]
+        if password not in login[1]:
+            print('wrong password')
+    if username == names[2]:
+        password is login[2]
+        if password not in login[2]:
+            print('wrong password')
+    if username == names[3]:
+        password is login[3]
+        if password not in login[3]:
+            print('wrong password')
+    if password == '':
+            print('please write something')
+    print('Welcome, enjoy')
     break
-else:
-    pass
+
 print("_ _"*50)
 
 print('We have three texts to be analysed.')
