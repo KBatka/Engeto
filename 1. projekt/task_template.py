@@ -41,10 +41,16 @@ print('Welcome to the app. Please login in')
 names = ['bob','ann','mike','liz']
 login = ['123','pass123','password123','pass123']
 
-username = input('USERNAME:')
-password = input('PASSWORD:')
-
 while True:
+    username = input('USERNAME:')
+    password = ''
+    if username not in names or username == '':
+        print('wrong username')
+        if not password:
+            print('šluss')
+            break
+    else:
+        password = input('PASSWORD:')
     if username == names[0]:
         password is login[-3]
         if password not in login[-3]:
@@ -63,8 +69,9 @@ while True:
             print('wrong password')
     if password == '':
             print('please write something')
-    print('Welcome, enjoy')
     break
+    print('welcome')
+
 
 print("_ _"*50)
 
