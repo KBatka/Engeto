@@ -78,7 +78,20 @@ print("_ _"*50)
 print('We have three texts to be analysed.')
 handler = input('Enter a number btw. 1 - 3 to select:')
 #kod pro a) výběr objektu v listu, b) vyhodnocení 5 požadavků
+first = TEXTS[0]
+second = TEXTS[1]
+third = TEXTS[2]
 
+word = .split()
+
+while True:
+    if handler == '0' or handler > '3' or handler.isalpha() or handler == '':
+        print('wrong answer')
+        break
+    else:
+        pass
+
+nr_of_words = len(word)
 print('There are',nr_of_words,'words in the selected text.')
 print('There are',nrcapitalltr,'titlecased words')
 print('There are',nrupwrds,'uppercase words')
@@ -89,7 +102,7 @@ print("_ _"*50)
 #tabulka ->pracuji s handlerem
 #počítá délku slov a jejich četnost v jednotlivých objektech
 #tolik řádků jako je zastoupení jednotlivých slov, tzn. třeba pětiznakové můžou chybět
-# (napsat tak, aby se samo korigovalo nebo pro každý blok zvlášť? wtf how?)
+# (napsat tak, aby se samo korigovalo nebo pro každý blok zvlášť?)
 print("_ _"*50)
 
-print('If we summed all the numbers in this text we would get:'#sum hodnoty všech numer objektů)
+print('If we summed all the numbers in this text we would get:'#sum hodnoty všech numer stringů)
