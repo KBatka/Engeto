@@ -1,7 +1,8 @@
 dejdej = input('Please enter the password:')
 
-aefqz
-if dejdej #start with aefqz:
-    print('Welcome!')
+moje_znaky = ['a','e','f','q','z']
+
+if dejdej.islower() and dejdej[0] in moje_znaky:
+        print('Welcome!')
 else:
-    print('The input does not match')
+        print('The input does not match')
