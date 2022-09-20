@@ -5,10 +5,11 @@ print("Name:" + name)
 surname = (input("Please insert your surname:"))
 print("Surname:" + surname)
 
-full_name = name + surname
-print("Full name:" + full_name)
+full_name = name + " " + surname
+print("Full name:" + full_name) # vlozena mezera
+print("Full name:" +" ".join((name,surname)))
 
-name_length = str(len(name+surname))
+name_length = str(len(name+surname))#pocitano bez mezer
 print("Length of full name:" + name_length)
 
 print("="*len(full_name))

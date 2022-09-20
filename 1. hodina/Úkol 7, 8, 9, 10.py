@@ -7,10 +7,10 @@ candidates = []
 print('Candidates at the beginning:', candidates)
 
 # Create employees
-emplooyes = ['Francis', 'Ann', 'Jacob', 'Claire']
+employees = ['Francis', 'Ann', 'Jacob', 'Claire']
 
 # Print employees at the beginning
-print('Employees at the beginning:', emplooyes)
+print('Employees at the beginning:', employees)
 
 # Add new candidates
 candidates.append('Agnes')
@@ -20,15 +20,17 @@ candidates.append('Bruno')
 print('New names added to candidates:', candidates)
 
 # Insert name
-emplooyes.insert(1,'Bruno')
+employees.insert(1, 'Bruno')
 
 # Print the employees list after entering a new name
-print('New names added to employees:', emplooyes)
+print('New names added to employees:', employees)
 
 #Úkol 8
 # Results from previous task
-candidates = ['Bruno', 'Agnes']
-employees = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire']
+candidates_test = ["Agnes",'Bruno']
+employees_test = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire']
+print("Sedi seznam candidates z ukolu 7:",candidates==candidates_test)
+print("Sedi seznam emploeeys z ukolu 7:", employees_test == employees)
 
 # Delete names from candidates
 candidates.remove('Bruno')
@@ -37,30 +39,29 @@ candidates.remove('Bruno')
 print('Bruno removed from candidates:', candidates)
 
 # Repeat element
-candidates = ['Agnes']*3
+agnes_repeat = ['Agnes']*3
 
 # Print repeating element in list candidates
-print('Repetition of Agnes in the candidate list:', candidates)
+print('Repetition of Agnes in the candidate list:', agnes_repeat)
 
 # Join lists
-emplooyes = emplooyes + candidates
+employees = employees + candidates
 
 # Print joined lists
-print('Joined candidates and employees:', emplooyes)
+print('Joined candidates and employees:', employees)
 
 # Index 2
-emplooyes = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire', 'Agnes', 'Agnes', 'Agnes']
-my_var = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire', 'Agnes', 'Agnes', 'Agnes'][2]
+
+my_var = employees[2]
 print('On index 2 is:', my_var)
 
 # Find out last index and assign it to variable
-last = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire', 'Agnes', 'Agnes', 'Agnes'][7]
-print('On the <last_index> index is:', last)
+last = len(employees) - 1
+print("At index ", last, "is:", employees[last])
 
 #Úkol 9
 # Results from the previous task
-candidates = ['Agnes', 'Agnes', 'Agnes']
-employees = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire', 'Agnes', 'Agnes', 'Agnes']
+
 
 # Interval 2-5
 interval = employees[2:6]
@@ -71,7 +72,7 @@ each_third = employees[0::3]
 print('Every third member is:', each_third)
 
 # Save index
-employees = ['Francis', 'Bruno', 'Ann', 'Jacob', 'Claire', 'Agnes', 'Agnes', 'Agnes']
+
 x = employees.index('Jacob')
 
 # Jacob index
