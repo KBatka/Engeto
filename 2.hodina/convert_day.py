@@ -21,4 +21,4 @@ elif ot == '':
 else:
     print('only nrs between 1-7')
 
-#aneb jak si vymyslet vlastní řešení :D
+

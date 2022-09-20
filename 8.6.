@@ -1,0 +1,26 @@
+import sys #sys info
+import os # práce s cestami, jmény
+
+print(__file__)
+
+path = "" #cesta k složce
+
+# přidávám if sys.platform == "win32": při přechodu do jiného systému  - win, mac (hardcoreprogramming)
+    #path = "cestaksouboru"
+    #elif sys.platform =="linux"  (lektor na win)
+    #else:
+    #print("no mac supported")
+    #exit()
+
+#__file__ = "test.py"
+
+print(os.path.)
+
+#windows cesta:
+try:
+os.mkdir(os.path.join(path, "test_folder", "test file"))
+except FileExistsError:
+print("Skipping as folder exist")
+
+print(sys.platform) #kopirování souboru a slozek
+print(os.sep)

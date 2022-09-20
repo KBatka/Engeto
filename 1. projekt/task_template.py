@@ -77,7 +77,7 @@ print("_ _"*50)
 
 print('We have three texts to be analysed.')
 handler = input('Enter a number btw. 1 - 3 to select:')
-#kod pro a) výběr objektu v listu, b) vyhodnocení 5 požadavků
+
 first = TEXTS[0]
 second = TEXTS[1]
 third = TEXTS[2]

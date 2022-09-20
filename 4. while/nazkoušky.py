@@ -1,9 +1,9 @@
-picker = int(input('Please enter your number:'))
+number = int(input('Please enter your number:'))
 
 a = 1
+i = number/number
 
-while a <= picker:
-    print((a**a+1))
 
-print('The result is:',a)
-print(type(a))
+while i < number:
+    i = (i+1)**(i+1)
+    print('The result is:',i)
