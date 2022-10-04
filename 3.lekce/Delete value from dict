@@ -9,6 +9,7 @@ print("Max value of key:" + maximal_value_of_key)
 maximal_value = max(my_new_dict.values())
 print("Max value:", maximal_value)
 
+print("abcd"<"vbcd")
 if str(maximal_value) < maximal_value_of_key:
     my_new_dict.pop(maximal_value_of_key)
 else: print("hurá")

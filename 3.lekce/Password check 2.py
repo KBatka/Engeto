@@ -1,7 +1,7 @@
 data = {'user1': 'password1', 'Mark': '1234', 'Danny': 'qwert'}
 
 get_name = input('Please enter username:')
-
+#TODO pouzit get_name a zkusit rozdil mezi LBYL (IF ELSE) a EAFP (TRY EXCEPT )
 get_password = input('Please enter password: ')
 
 if get_password == data['Mark']:

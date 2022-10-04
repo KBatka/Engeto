@@ -1,6 +1,4 @@
-gimme_nr = input("Please, give me some number:")
-
-um = input('Please, give me a number: ')
+num = input('Please, give me a number: ')
 
 # 1
 if num == '':

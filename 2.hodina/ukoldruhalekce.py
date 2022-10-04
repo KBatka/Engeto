@@ -4,13 +4,14 @@ my_str = 'Python'
 result = ''
 
 if my_str.istitle():
-    result = print('Titlecased')
+    result='Titlecased'
+
 else:
-    result = print('Not titlecased')
+    result = 'Not titlecased'
 
-my_str = 'Python'
-result = print('Titlecased') if my_str.istitle() else print('Not titlecased')
+print(result)
 
-#ptá se mne, zda je první písmeno velké, nebo všechna?
 
-#rozpracováno
+my_str = 'python'
+result = 'Titlecased' if my_str.istitle() else 'Not titlecased'
+print(result)
