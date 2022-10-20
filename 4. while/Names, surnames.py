@@ -16,5 +16,5 @@ students = ['Adam, Baker','Chelsea, Archer',
 seznam = str(students)
 rozdel = seznam.split(',')
 jmena = rozdel[::2]
-prijmeni = rozdel[::1]
+prijmeni = rozdel[1::2]
 print(jmena, prijmeni)

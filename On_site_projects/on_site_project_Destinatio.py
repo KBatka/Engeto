@@ -2,9 +2,9 @@
 Prague = ("Prague",1000)
 Wien = ("Wien",1100)
 Brno = ("Brno",2000)
-Svitavy = ("Svitavy",1500)
+Svitavy = ["Svitavy",1500]
 Zlin = ("Zlin",2300)
-Ostrava = ("Ostrava",3400)
+Ostrava = ["Ostrava",3400]
 destinace =[Prague,Wien,Brno,Svitavy,Zlin,Ostrava]
 
 print('='*20)
@@ -40,11 +40,18 @@ if birth >= 2007:
     print("We cannot provide our services to clients under 15 years of age")
 
 print('='*20)
-mail = input('EMAIL:')
-if "@" not in mail:
-    exit("Please enter valid email")
-print('='*20)
 
+
+def input_valid_mail():
+  mail = input('EMAIL:')
+  if "@" not in mail:
+    print("Please enter valid email")
+    input_valid_mail()
+
+
+input_valid_mail()
+
+print('='*20)
 #Password has to be at least 8 chars long, cannot begin and end with a number and has to contain both letters and numbers
 password = input('PASSWORD:')
 delka = len(password)
@@ -58,7 +65,9 @@ elif password[0].isdigit():
 elif password[-1].isdigit():
     print("cannot end with a number")
 
+#TODO: rekurzivni funkce podobne jako input_valid_mail nebo bool promena is_valid a nakonec otestovat a exit()
+
 print('='*20)
-print('Thank you', name)
+print('Thank you', name,"",surname)
 print('We have made your reservation to', destinace[index_destinace][0])
 print('The total price is', destinace[index_destinace][1])

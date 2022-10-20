@@ -41,36 +41,21 @@ print('Welcome to the app. Please login in')
 names = ['bob','ann','mike','liz']
 login = ['123','pass123','password123','pass123']
 
-while True:
+input_valid = False
+while not input_valid:
     username = input('USERNAME:')
-    password = ''
+
     if username not in names or username == '':
         print('wrong username')
-        if not password:
-            print('šluss')
-            break
-    else:
-        password = input('PASSWORD:')
-    if username == names[0]:
-        password is login[-3]
-        if password not in login[-3]:
-            print('wrong password')
-    if username == names[1]:
-        password is login[1]
-        if password not in login[1]:
-            print('wrong password')
-    if username == names[2]:
-        password is login[2]
-        if password not in login[2]:
-            print('wrong password')
-    if username == names[3]:
-        password is login[3]
-        if password not in login[3]:
-            print('wrong password')
-    if password == '':
-            print('please write something')
-    break
-    print('welcome')
+        continue
+
+    password = input('PASSWORD:')
+    if not password == login[names.index(username)]:
+        print('wrong pass')
+        continue
+    input_valid = True
+
+print('welcome')
 
 
 print("_ _"*50)
@@ -82,7 +67,7 @@ first = TEXTS[0]
 second = TEXTS[1]
 third = TEXTS[2]
 
-word = .split()
+#word = .split()
 
 while True:
     if handler == '0' or handler > '3' or handler.isalpha() or handler == '':
@@ -105,4 +90,4 @@ print("_ _"*50)
 # (napsat tak, aby se samo korigovalo nebo pro každý blok zvlášť?)
 print("_ _"*50)
 
-print('If we summed all the numbers in this text we would get:'#sum hodnoty všech numer stringů)
+print('If we summed all the numbers in this text we would get:')#sum hodnoty všech numer stringů
