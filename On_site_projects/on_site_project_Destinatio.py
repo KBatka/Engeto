@@ -7,6 +7,12 @@ Zlin = ("Zlin",2300)
 Ostrava = ["Ostrava",3400]
 destinace =[Prague,Wien,Brno,Svitavy,Zlin,Ostrava]
 
+i = int(Svitavy[1])
+sleva_svitavy = (i-(i/100)*25)
+
+q=int(Ostrava[1])
+sleva_ostrava=(q-(q/100)*25)
+
 print('='*20)
 print('Welcome to the DESTINATIO, place where people plan their trips')
 print('='*20)
@@ -24,6 +30,8 @@ print("6", Ostrava [0], "|", Ostrava [1])
 print('_'*20)
 nr_destination = int(input('Please, enter the destination number to select:'))
 index_destinace = nr_destination -1
+
+
 
 print('='*20)
 print('REGISTRATION:')
@@ -48,7 +56,6 @@ def input_valid_mail():
     print("Please enter valid email")
     input_valid_mail()
 
-
 input_valid_mail()
 
 print('='*20)
@@ -70,4 +77,10 @@ elif password[-1].isdigit():
 print('='*20)
 print('Thank you', name,"",surname)
 print('We have made your reservation to', destinace[index_destinace][0])
+if nr_destination is 4:
+    Svitavy.insert(1,sleva_svitavy)
+    print("Svitava má slevu")
+if nr_destination is 6:
+    Ostrava.insert(1,sleva_ostrava)
+    print("Ostrava má slevu 25%")
 print('The total price is', destinace[index_destinace][1])

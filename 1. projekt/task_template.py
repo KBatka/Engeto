@@ -66,15 +66,23 @@ handler = input('Enter a number btw. 1 - 3 to select:')
 first = TEXTS[0]
 second = TEXTS[1]
 third = TEXTS[2]
-
+print(type(first))
+a = first.split()
+print(a)
+pocetslovprvni = len(a)
+print(pocetslovprvni)
 #word = .split()
 
-while True:
-    if handler == '0' or handler > '3' or handler.isalpha() or handler == '':
-        print('wrong answer')
-        break
-    else:
-        pass
+
+if handler == 0:
+    print('wrong answer')
+elif handler > "3":
+    print('wrong answer')
+elif handler.isalpha():
+    print('wrong answer')
+elif handler == '':
+    print('wrong answer')
+    exit()
 
 nr_of_words = len(word)
 print('There are',nr_of_words,'words in the selected text.')
@@ -84,6 +92,19 @@ print('There are',nrlcwrds,'lowercase words')
 print('There are',nrnumonly,'numeric strings')
 
 print("_ _"*50)
+titlecased = []
+uppercased = []
+lovercased = []
+numerics = []
+for prvek in first:
+    if prvek[0].isupper():
+        titlecased.append(prvek)
+    if prvek.isupper():
+        uppercased.append(prvek)
+#list comprehension
+titlecased2 = [prvek for prvek in first if prvek[0].isupper()]
+prvnipismenka = [prvek[0] for prvek in first]
+
 #tabulka ->pracuji s handlerem
 #počítá délku slov a jejich četnost v jednotlivých objektech
 #tolik řádků jako je zastoupení jednotlivých slov, tzn. třeba pětiznakové můžou chybět
